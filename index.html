@@ -1,0 +1,135 @@
+<!--ISAAC MOYA-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inicio</title>
+		<link rel="stylesheet" href="estilo.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header><!--NAVEGADOR DONDE IREMOS ALTERNANDO ENTRE PAGINAS, LLEVA UN ID PORQUE SOLO APARECE UNA VEZ-->
+			<a href="https://fundacionloyola.com/vguadalupe/" target="_blank"><img src="imagenes/fundacion.png"></a> <!--IMAGEN QUE LLEVA A LA WEB DEL COLEGIO-->
+			<nav>
+				<ul> <!--LISTA CON ENLACES QUE SIRVE DE MENÚ-->
+					<li><a href="index.html">INICIO</a></li> 
+					<li><a href="consejos.html">CONSEJOS</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article><!--CUERPO DE LA PÁGINA-->
+			<section id="titulo"><!--APARTADO-->
+				<h1>¿Sabías que hacer compras online contamina más que hacerlas en un centro comercial?</h1><!--TÍTULO DE LA PÁGINA-->
+				<img src="imagenes/compras.png">
+			</section>
+			<section>
+				<h1 class="h1apartado">¿Cómo es esto posible?</h1><!--TITULO DEL APARTADO, LLEVA UNA CLASE PORQUE LOS ESTILOS SE REPERTIRÁN-->
+				<p>
+					La creciente popularidad de las compras en línea ha transformado
+					la forma en que adquirimos bienes y servicios.
+					A primera vista, puede parecer que las compras en línea
+					son más ecológicas, ya que evitan desplazamientos físicos
+					y reducen el uso de papel.<br><br> Sin embargo, al analizar detenidamente
+					el ciclo completo de producción, distribución y entrega de productos,
+					se revela que las compras en línea pueden, en algunos casos,
+					tener un <a href="https://es.wikipedia.org/wiki/Impacto_ambiental" target="_blank">impacto ambiental</a> significativamente mayor que una visita
+					al centro comercial.
+				</p> <!--UN PÁRRAFO CON CONTENIDO DEL TEMA-->
+			</section>
+			<section id="consecuencias">
+				<h1 class="h1apartado">Las consecuencias</h1>
+				<p>
+					Si bien las compras en línea son convenientes y accesibles,
+					conllevan diversas consecuencias para el medio ambiente.
+					En primer lugar, el embalaje utilizado para proteger y
+					entregar los productos genera un aumento en la producción de residuos,
+					especialmente plásticos, contribuyendo a la creciente crisis
+					de contaminación plástica a nivel global.<br><br>
+					Además, el transporte asociado con las compras en línea
+					conlleva altas emisiones de carbono y contaminación del aire.
+					Los vehículos de entrega, en muchos casos impulsados por combustibles
+					fósiles, recorren largas distancias para llegar a cada destino,
+					generando una huella ecológica considerable.
+					Esto se agrava aún más si los envíos no están optimizados
+					en términos de rutas y eficiencia logística.<br><br>
+					Otro aspecto a considerar es la gestión de devoluciones,
+					que es común en las compras en línea debido a la imposibilidad
+					de evaluar los productos de manera directa antes de la compra.<br>
+					El proceso de devolución implica el transporte adicional de
+					productos desde el cliente hasta el almacén, generando más
+					emisiones y desperdicio de embalaje.
+				</p>
+				<img src="imagenes/consecuencias.png">
+				<table><!--TABLA COMPARATIVA-->
+					<caption>Emisiones de CO2 por compra online frente a una compra en físico</caption><!--CAPTION SIRVE PARA DAR TITULO A LA TABLA-->
+					<tr><!--FILA-->
+						<th>Tipo de Compra</th><!--CABECERA DE LA TABLA-->
+						<th>Emisiones de CO2 (kg)</th>
+					</tr>
+					<tr>
+						<td>Compra Online</td><!--CELDA NORMAL-->
+						<td>10.3</td>
+					</tr>
+					<tr>
+						<td>Compra Habitual</td>
+						<td>1.2</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h1 class="h1apartado">Conclusión</h1>
+				<p>
+					En conclusión, aunque las compras en línea pueden parecer 
+					más convenientes y eficientes a primera vista, es importante
+					considerar el impacto ambiental total de este proceso, incluyendo
+					la producción, distribución y manejo de residuos.<br><br> La sostenibilidad
+					debe ser un factor clave en nuestras decisiones de compra, tanto en
+					línea como en el comercio tradicional, para mitigar el impacto
+					ambiental negativo y avanzar hacia un consumo más responsable.
+				</p>
+			</section>
+		</article>
+		<footer>
+			<a href="https://fundacionloyola.com/vguadalupe/" target="_blank"><img src="imagenes/formlogo.jpg"></a>
+			<h3>Comparte con nosotros tu visión del tema:</h3>
+			<form action="formulario.php" method="GET" autocomplete="off"><!--FORMULARIO-->
+				<label for="name">Nombre:</label><br><!--LABEL SIRVE PARA DAR TITULO VISUAL A LOS INPUTS-->
+				<input type="text" name="nombre"><!--INPUT SIRVE PARA INTRODUCIR INFORMACION-->
+				<br><br>
+				<label for="edad">Edad:</label><br>
+				<input type="number" min="1" max="120" name="edad"><!--EL INPUT TIPO NUMBER PERMITE INTRODUCIR SOLO NÚMEROS Y ADEMÁS PODEMOS LIMITARLOS CON MAX Y MIN-->
+				<br><br>
+				<label for="comentario">Tu comentario:</label>
+				<textarea name="comentario" rows="5" cols="33"></textarea><br><!--TEXTAREA SIRVE PARA CREAR UNA CAJA DE TEXTO MAS GRUESA-->
+				<br>
+				<label for="radio">Género:</label><br><br><!--LABEL SIRVE PARA DAR TITULO VISUAL A LOS INPUTS-->
+				<label for="m">Masculino</label>
+				<input type="radio" id="m" name="radio" value="masculino"><!--INPUT SIRVE PARA INTRODUCIR INFORMACION-->
+				<label for="f">Femenino</label>
+				<input type="radio" id="f" name="radio" value="femenino"><!--INPUT SIRVE PARA INTRODUCIR INFORMACION-->
+				<br><br>
+				<label for="pais">País:</label>
+				<select name="pais">
+					<option value="">- Selecciona opción -</option>
+					<option value="España">España</option>
+					<option value="Portugal">Portugal</option>
+					<option value="Francia">Francia</option>
+			    </select>
+				<br>
+				<p>¿Qué sueles comprar por internet?</p>
+				<input type="checkbox" name="cb[]" value="ropa"/> <!--SE LE PONE DE NOMBRE LOS CORCHETES AL FINAL PARA INDICAR AL PHP QUE ES UN ARRAY-->
+				<label for="cb[]">Ropa</label><br><br>
+				<input type="checkbox" name="cb[]" value="productos"/>
+				<label for="cb[]">Productos Tecnológicos</label><br><br>
+				<input type="checkbox" name="cb[]" value="comida"/>
+				<label for="cb[]">Comida rápida</label><br><br>
+				<input type="checkbox" name="cb[]" value="otro"/>
+				<label for="cb[]">Otro</label>
+				<br><br>
+				<input type="checkbox" name="terminos" value="aceptados"/>
+				<label for="terminos">¿Aceptas los terminos?</label>
+				<br><br>
+				<input type="submit"><!--LOS INPUTS DE TIPOS SUBMIT SON PARA ENVIAR LOS DATOS DEL FORMULARIO A DONDE LE HAYAMOS PUESTO EN EL ACTION AL FORMULARIO-->
+			</form>
+		</footer>
+	</body>
+</html>

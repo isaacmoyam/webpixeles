@@ -1,0 +1,157 @@
+/*ISAAC MOYA*/
+
+/*LAYOUT*/
+
+body{ /*SELECTOR DE TIPO*/
+	width:1280px; /*AJUSTA EL ANCHO*/
+	background-image:url("imagenes/fondo.jpg"); /*FONDO DE LA PAGINA*/
+	background-size:cover; /*AJUSTA LA IMAGEN AL TAMAÑO DE LA VENTANA DEL NAVEGADOR*/
+	background-repeat:no-repeat; /*EVITA QUE SE REPITA LA IMAGEN DE FONDO*/
+	margin:0;/*QUITA EL MARGEN POR DEFECTO DEL BODY POR TODOS LOS LADOS*/
+}
+
+header{ 
+	background-color:white; /*COLOR DEL FONDO*/
+	width:1280px; /*AJUSTA EL ANCHO*/
+	height:80px; /*AJUSTA LA ALTURA*/
+	padding:10px; /*AÑADE RELLENO POR TODOS LOS LADOS*/
+	font-family:arial; /*CAMBIA LA FUENTE POR DEFECTO*/
+	font-weight:bold; /*PONE EL TEXTO EN NEGRITA*/
+}
+
+header img{ 
+	width:150px; /*AJUSTA EL ANCHO*/
+	float:left; 
+}
+
+header nav ul li{
+	float:left; /*SACA EL ELEMENTO DEL FLUJO DE LA WEB Y LO SITUA A LA IZQUIERDA*/
+	margin:15px; /*AJUSTA EL MARGEN POR TODOS LOS LADOS*/
+	list-style-type:none; /*QUITA EL SIMBOLO DE LA LISTA POR DEFECTO*/
+}
+
+header nav ul li:first-child{ /*SELECCIONA EL PRIMER ELEMENTO HIJO DEL ELEMENTO UL QUE ES HIJO DEL ELEMENTO CON ID NAVEGADOR*/
+	margin:15px 60px 0 320px; /*AJUSTA EL MARGEN POR LOS CUATRO LADOS: ARRIBA,DERECHA,ABAJO,IZQUIERDA*/
+}
+
+#titulo h1{
+	width:700px;
+	float:left;
+	font-size:50px;
+	margin: 10px 30px 0 10px ;
+	color:#3216B0;
+	text-align:center;
+}
+
+#titulo img{
+	width:340px;
+	margin: 10px;
+}
+
+article{
+	background-color:rgba(255,255,255,0.29);
+	width:1160px;
+	padding:20px;
+	margin:30px 40px;
+	border-radius:10px;
+	font-family:tahoma;
+}
+
+article section{
+	width:1100px;
+	margin:0 auto 30px;
+	padding:15px;
+	border-radius:10px;
+	background-color:white;
+}
+
+#consecuencias p{
+	width:700px;
+	float:left;
+}
+
+#consecuencias img{
+	width:220px;
+	margin:0 0 0px 80px;
+}
+
+table{
+	width:550px;
+	border-collapse:collapse; /*HACE QUE LOS BORDES DE LA TABLA SE UNAN*/
+	margin:10px auto;
+}
+
+footer{
+	background-color:#134ea8;
+	width:1180px;
+	padding:10px;
+	color:white;
+	font-family:arial;
+	margin:0 40px;
+}
+
+form{
+	background-color:#2ba6ed;
+	margin:0 auto;
+	width:150px;
+	text-align:center;
+	border-radius:10px;
+	padding:10px 275px;
+	font-family:Arial;
+	color:black;
+}
+
+/*ESTILOS DEL HEADER*/
+
+header nav ul li a{
+	text-decoration:none; /*ANULA EL SUBRAYADO POR DEFECTO QUE TIENEN LOS ENLACES*/
+	color:white; /*CAMBIA DE COLOR EL TEXTO*/
+	background-color:#2255a8;
+	padding:15px 30px; /*AÑADE RELLENO POR ARRIBA Y ABAJO Y POR DERECHA E IZQUIERDA*/
+	border-radius:9px; /*REDONDEA LOS BORDES*/
+}
+
+header nav ul li a:hover{ /*AL PASAR EL CURSOR POR ENCIMA DEL ELEMENTO, SE APLICAN LOS ESTILOS*/
+	background-color:#1d4a91; 
+}
+
+/*TITULOS DE APARTADOS*/
+
+.h1apartado{
+	font-size:20px; /*CAMBIA EL TAMAÑO DE LA LETRA*/
+	color:orange;
+}
+
+/*FUENTE Y TAMAÑO DE LOS PARRAFOS*/
+
+p{
+	font-family:georgia;
+	font-size:13px;  
+	text-align:justify; /*JUSTIFICA EL TEXTO*/
+	padding:8px;
+}
+
+/*APARTADO DE CONSECUENCIAS*/
+
+th,td{
+	padding:10px;
+	text-align:center; /*CENTRA EL TEXTO*/
+	background-color:#f5b745;
+	border:solid 1px black; /*AÑADE UN BORDE*/
+}
+th{
+	background-color:#127adb;
+}
+
+/*FORMULARIO*/
+
+footer img{
+	width:150px;
+	float:left;
+	margin:0 140px 0 0;
+}
+
+form input,textarea{
+	border-radius: 5px;
+	width:150px;
+}
